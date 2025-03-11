@@ -36,9 +36,6 @@ classy_sz.set({
 classy_sz.compute_class_szfast()
 ```
 
-    CPU times: user 28.5 ms, sys: 20.4 ms, total: 48.9 ms
-    Wall time: 33.1 ms
-
 
 ### collect derived parameters
 
@@ -49,95 +46,33 @@ Here are some examples. More parameters are available.
 classy_sz.sigma8()
 ```
 
-
-
-
-    0.8118792418260571
-
-
-
-
 ```python
 classy_sz.Neff()
 ```
-
-
-
-
-    3.044172067466906
-
-
-
 
 ```python
 classy_sz.get_current_derived_parameters(['A_s'])
 ```
 
-
-
-
-    {'A_s': 2.105209331337507e-09}
-
-
-
-
 ```python
 classy_sz.get_current_derived_parameters(['logA'])
 ```
-
-
-
-
-    {'logA': 3.047}
-
-
-
 
 ```python
 classy_sz.get_current_derived_parameters(['ln10^{10}A_s'])
 ```
 
-
-
-
-    {'ln10^{10}A_s': 3.047}
-
-
-
-
 ```python
 classy_sz.get_current_derived_parameters(['Neff'])
 ```
-
-
-
-
-    {'Neff': 3.044172067466906}
-
-
-
 
 ```python
 classy_sz.get_current_derived_parameters(['m_ncdm_in_eV'])
 ```
 
-
-
-
-    {'m_ncdm_in_eV': 0.02}
-
-
-
-
 ```python
 classy_sz.get_current_derived_parameters(['Omega_m'])
 ```
-
-
-
-
-    {'Omega_m': 0.30964144154550644}
-
 
 
 ### accessing the list of params that have been set
@@ -205,9 +140,6 @@ classy_sz.compute_class_szfast()
 print('sigma8:',classy_sz.sigma8())
 ```
 
-    sigma8: 0.8118792418260571
-    CPU times: user 31.2 ms, sys: 16.5 ms, total: 47.7 ms
-    Wall time: 38.3 ms
 
 
 # Passing $\sigma_8$ instead of $A_s$
@@ -321,18 +253,4 @@ classy_sz.set({
 'skip_input': 1,
 })
 classy_sz.compute_class_szfast()
-```
-
-    CPU times: user 35.7 ms, sys: 23.6 ms, total: 59.3 ms
-    Wall time: 40 ms
-
-
-
-```python
-
-```
-
-
-```python
-
 ```

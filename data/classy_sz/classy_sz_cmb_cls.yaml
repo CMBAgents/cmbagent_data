@@ -4,6 +4,7 @@
 
 
 ```python
+%matplotlib inline
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -34,14 +35,19 @@ def l_to_dl(lp):
 
 
 ```python
+%%time 
 classy_sz = Class_sz()
 classy_sz.set(cosmo_params)
 classy_sz.set({
-'output':'tCl,lCl,pCl', # this computes temperature, lensing potential and polarization power spectra
-# if you need TT only (i.e., temperature only) is needed pass: 'output': 'tCl'
+'output':'tCl,lCl,pCl',
+# if TT only (i.e., temperature only) is needed pass: 'output': 'tCl'
 })
 classy_sz.compute_class_szfast()
 ```
+
+    CPU times: user 30.7 ms, sys: 28.5 ms, total: 59.2 ms
+    Wall time: 59.9 ms
+
 
 
 ```python
@@ -134,3 +140,10 @@ fig.tight_layout()
 
     
 
+
+## Time computation of CMB Cl's
+
+
+```python
+%timeit -n 5 classy_sz.compute_class_szfast()
+```
