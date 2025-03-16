@@ -44,7 +44,7 @@ z = 0.3 # chose a redshift value
 
 
 ## compute:
-pks,ks = classy_sz.get_pkl_at_z(z,params_values_dict = cosmo_params)
+pks,ks = classy_sz.get_pkl_at_z(z,params_values_dict = cosmo_params) # units: $k [1/Mpc]$ and $P(k) [Mpc]^3$
 ```
 
 ## Compute non-linear pk
@@ -62,9 +62,28 @@ cosmo_params = {
 
 z = 0.3 # chose a redshift value 
 ## compute:
-pks,ks = classy_sz.get_pknl_at_z(z,params_values_dict = cosmo_params)
+pks,ks = classy_sz.get_pknl_at_z(z,params_values_dict = cosmo_params) # units: $k [1/Mpc]$ and $P(k) [Mpc]^3$
 ```
 
+## Range of wavenumbers
 
-`
+The maximum wavenumber is kmax=10 [1/Mpc].
+
+The minimum wavenumber is kmin=1e-4 [1/Mpc].
+
+
+## Plotting the matter power spectrum
+
+For plots, the matter power spectrum should be presented in log-log scale.
+
+Any function of wavenumber should in general be plotted in log scale for x-axis.
+
+
+## Interpolating the matter power spectrum
+
+Interpolation on matter power spectrum is done in log-log space.
+
+
+
+
  
