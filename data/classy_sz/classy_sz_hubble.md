@@ -1,4 +1,5 @@
-# How to compute the critical density with classy_sz
+# How to compute the Hubble parameter with classy_sz
+
 
 ## Intialize
 
@@ -17,21 +18,21 @@ params = {
     'ln10^{10}A_s': 3.047,
     'n_s': 0.965,
     'H0': 67.66, # in km/s/Mpc
-    'omega_b': 0.022, # this is $Omega_b h^2$
-    'omega_cdm': 0.12, # this is $Omega_cdm h^2$
+    'omega_b': 0.022,   # this is $Omega_b h^2$
+    'omega_cdm': 0.12,  # this is $Omega_cdm h^2$
     'tau_reio': 0.06
 }
 
 
-# At redshift z, the critical density is computed as:
+# At redshift z, the Hubble parameter (in units of $1/Mpc$) is computed as:
 
-rho_crit_z = classy_sz.get_rho_crit_at_z(z,params) # units: $[M_{\odot}/h] [Mpc/h]^{-3}$
+H_z = classy_sz.get_hubble_at_z(z,params) # units: [1/Mpc]
 # Note:this function handles both scalar and array inputs for z.
 
 ```
 ## Units
 
-The critical density is computed in units of $[M_{\odot}/h] [Mpc/h]^{-3}$.
+The Hubble parameter is computed in units of $[1/Mpc]$.
 
 
 
