@@ -28,7 +28,7 @@ cosmo_params = {
 'omega_b': 0.02242, # this is $Omega_b h^2$
 'omega_cdm':  0.11933, # this is $Omega_cdm h^2$
 'H0': 67.66, # in km/s/Mpc
-'tau_reio': 0.0561,
+'tau_reio': 0.0561, # this parameter doesnt matter for P(k)
 'ln10^{10}A_s': 3.047,
 'n_s': 0.9665,
 }
@@ -48,7 +48,7 @@ cosmo_params = {
 'omega_b': 0.02242, # this is $Omega_b h^2$
 'omega_cdm':  0.11933, # this is $Omega_cdm h^2$
 'H0': 67.66, # use H0 instead of theta_star because this is what is used by the emulators and to avoid any ambiguity when comparing with camb. 
-'tau_reio': 0.0561,
+'tau_reio': 0.0561, # this parameter doesnt matter for P(k)
 'ln10^{10}A_s': 3.047,
 'n_s': 0.9665,
 }
